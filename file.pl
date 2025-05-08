@@ -3,3 +3,4 @@ if ($. == 1){
 }
 s~^Summary:.*~Summary: Access Objective-C classes from Python~g;
 s~^URL:.*~URL: pyobjus.readthedocs.io~g;
+s~(%files.*)~\1\n%{_datadir}/pyobjus-examples~
