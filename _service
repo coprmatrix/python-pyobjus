@@ -4,7 +4,7 @@
 		<param name="scm">git</param>
 		<param name="filename">pyobjus</param>
 		<param name="revision">master</param>
-		<param name="changesgenerate">enable</param>
+		<param name="changesgenerate">disable</param>
 		<param name="without-version">enable</param>
 	</service>
 	<service name="py_build" mode="buildtime">
@@ -14,5 +14,9 @@
 	<service name="py2pack_generate" mode="buildtime">
 		<param name="name">pyobjus</param>
 		<param name="localfile">*.tar.gz</param>
+	</service>
+	<service name="perl_regex" mode="buildtime">
+		<param name="regexfile">file.pl</param>
+		<param name="file">*.spec</param>
 	</service>
 </services>
